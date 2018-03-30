@@ -21,7 +21,7 @@ Check this out... When large Web App pages (and by large I mean look at [GMail](
 ### Examples
 
 Let's take a closer look at hashmin definition in a sample document
-
+```javascript
     // Get a local instance
     let appRouter = new Hashmin()
 
@@ -38,6 +38,7 @@ Let's take a closer look at hashmin definition in a sample document
     appRouter.when('devs/profiles/:user', function(params) {
       templateEngine.render(`<h1>Hello, ${params.user}</h1>`)
     })
+```
 
 ### Under the Hood
 
