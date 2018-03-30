@@ -22,22 +22,22 @@ Check this out... When large Web App pages (and by large I mean look at [GMail](
 
 Let's take a closer look at hashmin definition in a sample document
 ```javascript
-    // Get a local instance
-    let appRouter = new Hashmin()
+// Get a local instance
+let appRouter = new Hashmin()
 
-    // Force set hash path
-    appRouter.bind(`profiles/bukharim96`)
+// Force set hash path
+appRouter.bind(`profiles/bukharim96`)
 
-    // Alternatively, you could attach an event handler to an element
-    const listenRouteEvent = (routeValue) => appRouter.bind(`profiles/${routeValue}`)
+// Alternatively, you could attach an event handler to an element
+const listenRouteEvent = (routeValue) => appRouter.bind(`profiles/${routeValue}`)
 
-    document.querySelectorAll('#myElementOrLink')
-      .forEach((route) => route.onclick = (e) => listenRouteEvent(this.attributes['route-value'].value))
+document.querySelectorAll('#myElementOrLink')
+  .forEach((route) => route.onclick = (e) => listenRouteEvent(this.attributes['route-value'].value))
 
-    // Query decisions with precise route parameter configurations
-    appRouter.when('devs/profiles/:user', function(params) {
-      templateEngine.render(`<h1>Hello, ${params.user}</h1>`)
-    })
+// Query decisions with precise route parameter configurations
+appRouter.when('devs/profiles/:user', function(params) {
+  templateEngine.render(`<h1>Hello, ${params.user}</h1>`)
+})
 ```
 
 ### Under the Hood
