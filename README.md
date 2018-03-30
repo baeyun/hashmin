@@ -18,6 +18,27 @@ So what if we could just use it for what it's meant for: *Single Page Routing/Re
 
 Check this out... When large Web App pages (and by large I mean look at [GMail](gmail.com) or [Twitter](twitter.com)) load and absolute URL routing is observed (that means without the hashes), changing the whole browser page state just because a user navigated to his/her `follower-count` page or revealed an empty UI modal is totally redundant and worth a whole lot of time.
 
+### Examples
+
+Let's take a closer look at hashmin definition in a sample document
+
+    // Get a local instance
+    let appRouter = new Hashmin()
+
+    // Force set hash path
+    appRouter.bind(`profiles/bukharim96`)
+
+    // Alternatively, you could attach an event handler to an element
+    const listenRouteEvent = (routeValue) => appRouter.bind(`profiles/${routeValue}`)
+
+    document.querySelectorAll('#myElementOrLink')
+      .forEach((route) => route.onclick = (e) => listenRouteEvent(this.attributes['route-value'].value))
+
+    // Query decisions with precise route parameter configurations
+    appRouter.when('devs/profiles/:user', function(params) {
+      templateEngine.render(`<h1>Hello, ${params.user}</h1>`)
+    })
+
 ### Under the Hood
 
 **Hashmin** stores app states from the URL hash in the memory and is not reliant on any persistance databases or storage interfaces like `IndexedDB` or `localStorage` respectively. Hash URLs could tend to get messy and/or obtrusive sometimes because our needs exceed our expectations. For that reason, it retrieves data asynchronously using the modern Promise API. Moreover, links could load other hashes which is why the Proxy API was used to create an *observer layer* for monitoring hash changes using a bi-directional channel (the *proxyHandler* which is attached to the *onHashChange* event).
