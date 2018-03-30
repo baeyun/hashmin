@@ -22,6 +22,10 @@ Check this out... When large Web App pages (and by large I mean look at [GMail](
 
 **Hashmin** stores app states from the URL hash in the memory and is not reliant on any persistance databases or storage interfaces like `IndexedDB` or `localStorage` respectively. Hash URLs could tend to get messy and/or obtrusive sometimes because our needs exceed our expectations. For that reason, it retrieves data asynchronously using the modern Promise API. Moreover, links could load other hashes which is why the Proxy API was used to create an *observer layer* for monitoring hash changes using a bi-directional channel (the *proxyHandler* which is attached to the *onHashChange* event).
 
+<p align="center">
+<img src="https://github.com/bukharim96/hashmin/blob/master/assets/hashmin-layer-def.svg" />
+</p>
+
 ### Features
 1. Client-side (single page oriented) routing
 2. Asynchronous callbacks with core `when(route [, observedCallback])` handler
