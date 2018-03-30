@@ -1,7 +1,11 @@
+<p align="center">
+<img height="300px" src="https://github.com/bukharim96/hashmin/blob/master/assets/hashmin-logo.svg" />
+</p>
+
 <h1 align="center">Hashmin</h1>
 
 <p align="center">
-	A tiny library for client-side routing with URL hashes
+A tiny library for client-side routing with URL hashes
 </p>
 
 ### Why URL hashes?
