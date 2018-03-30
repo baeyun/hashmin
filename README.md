@@ -23,9 +23,7 @@ Check this out... When large Web App pages (and by large I mean look at [GMail](
 2. Asynchronous callbacks with core `when(route [, observedCallback])` handler
 3. Hash change observed with a proxified layer - `hashminProxyLayer`
 
-<blockquote>
-Hashmin uses mtrategies and was written with the ECMAscript-2015 spec of the JavaScript language. For that reason, browser compatibility might be an issue. While our team are working on it, you could use a compiler such as Babel or Browserify
-</blockqoute>
+Hashmin uses strategies and was written with the ECMAscript-2015 spec of the JavaScript language. For that reason, browser compatibility might be an issue. While our team are working on it, you could use a compiler such as Babel or Browserify
 
 ### What about Single Page Apps
 
