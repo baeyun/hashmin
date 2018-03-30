@@ -1,15 +1,16 @@
-<svg width="1052" height="1049" xmlns="http://www.w3.org/2000/svg">
+<svg width="1282" height="791" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
  <g>
   <title>background</title>
-  <rect fill="#fff" id="canvas_background" height="1051" width="1054" y="-1" x="-1"/>
-  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  <rect x="-1" y="-1" width="1284" height="793" id="canvas_background" fill="#fff"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <text stroke="#2d2d5e" transform="matrix(28.13955836690183,0,0,23.21381381704759,-13157.567670320932,-5000.396024352273) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="243.381861" x="477.245451" fill="#ff7f00">#</text>
-  <path stroke="#2d2d5e" id="svg_4" d="m769.870878,430.437789c30.674294,-34.495134 36.840011,-81.569118 20.153234,-121.158001l-61.581238,70.239931l-60.703964,-11.543904l-20.114194,-57.195003l61.425494,-70.076797c-42.252061,-10.397288 -88.800966,2.155007 -119.340134,36.513638c-32.207372,36.222384 -37.478149,86.383334 -17.54345,127.080481l-160.517034,180.546286c-17.079819,19.195236 -14.999068,48.308601 4.625983,65.007942c19.625035,16.687574 49.384143,14.670657 66.458031,-4.52479l160.328984,-180.368169c44.133782,13.913597 94.451905,1.865505 126.808303,-34.521598l-0.000015,-0.000015z" stroke-width="13.5" fill="#ff7f00"/>
+  <text fill="#ff7f00" x="479.695391" y="240.132967" id="svg_3" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(44.69034225715459,0,0,36.90962018713543,-21186.065749788588,-8161.696174028996) " stroke="#2d2d5e">#</text>
+  <path stroke="#2d2d5e" fill="#ff7f00" stroke-width="26.5" d="m1086.21484,352.22188c53.015778,-55.501337 63.672268,-131.241557 34.831752,-194.938539l-106.433656,113.013333l-104.917424,-18.573695l-34.764277,-92.024548l106.164477,-112.750857c-73.02616,-16.728834 -153.478751,3.467323 -206.260985,58.749032c-55.665467,58.280415 -64.775191,138.987444 -30.321143,204.46758l-277.428895,290.491994c-29.519829,30.884393 -25.923572,77.726671 7.995297,104.595265c33.918841,26.849661 85.352862,23.60452 114.86244,-7.280212l277.10388,-290.20541c76.278424,22.38644 163.245526,3.001525 219.168562,-55.543916l-0.000026,-0.000024l0,-0.000002z" id="svg_4"/>
  </g>
 </svg>
