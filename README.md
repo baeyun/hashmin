@@ -8,6 +8,10 @@
 A tiny library for client-side routing with URL hashes
 </p>
 
+<blockquote>
+ Note: This project is still under development. Most features mentioned in this article are not yet implemented. Please send a pull request if you or your company wishes to contribute. Thank you.
+</blockquote>
+
 ### Why URL hashes?
 
 Okay, now I know what you're thinking: **"Just why hashes?"**. But before we dig into that, let's look at the objective of **Hashmin**. It's not such a great idea to implement hash routing into a web application mainly because hashes just represent the app state and not the absolute URL path, it's difficult debugging app URLs and route paramters with all the clumsy and unnecessary hash changes and also because of SEO optimization reasons, which is eventually an anti-pattern...
